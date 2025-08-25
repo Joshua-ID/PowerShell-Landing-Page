@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth fonts */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Fancy gradient ring helper */
+.gradient-ring {
+  box-shadow:
+   0 0 0 1px rgba(255,255,255,0.06) inset,
+   0 0 0 1px rgba(34,211,238,0.10);
+}
+
+/* Button base */
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold transition-all;
+}
+.btn-primary {
+  @apply bg-brand text-black hover:bg-brand-light active:bg-brand-dark shadow-soft;
+}
+.btn-ghost {
+  @apply bg-white/5 hover:bg-white/10 border border-white/10;
+}
+
+.section {
+  @apply py-20 md:py-28;
+}
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
